@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #000;
+}
+
+span{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    background-image: url(https://www.freeiconspng.com/thumbs/sun/natural-energy-source-the-sun-transparent-photos-3.png);
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.planet{
+   background: transparent;
+   border: 4px solid rgba(255, 255, 255, 0.5);
+   animation: animate 10s linear infinite;
+}
+
+.planet1{
+    width: 110px;
+    height: 110px;
+    
+}
+
+.planet2{
+    width: 180px;
+    height: 180px;
+}
+
+.planet3{
+    width: 280px;
+    height: 280px;
+}
+
+.planet4{
+    width: 380px;
+    height: 380px;
+}
+
+.planet5{
+    width: 480px;
+    height: 480px;
+}
+
+.planet6{
+    width: 580px;
+    height: 580px;
+}
+
+.planet7{
+    width: 680px;
+    height: 680px;
+}
+
+.planet8{
+    width: 780px;
+    height: 780px;
+}
+
+span::before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+span::after{
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.planet1::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background: #979797;
+}
+
+.planet2::before{
+    width: 25px;
+    height: 25px;
+    top:  10px;
+    left: 10px;
+    background: #ff2c00;
+}
+
+.planet3::before{
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    right: -15px;
+    background: #0099ff;
+}
+
+.planet4::before{
+    width: 30px;
+    height: 30px;
+    bottom: 40px;
+    left: 210px;
+    background: #ff2433;
+}
+
+.planet5::before{
+    width:40px;
+    height: 40px;
+    bottom: -18px;
+    left: 170px;
+    background: #ffb624;
+}
+
+.planet6::before{
+    width: 60px;
+    height: 60px;
+    top: 140px;
+    left: -7px;
+    background: #ffb84d;
+}
+
+
+.planet7::before{
+    width: 37px;
+    height: 37px;
+    bottom: 140px;
+    right: 30px;
+    background: #4d6bff;
+}
+.planet8::before{
+    width: 41px;
+    height: 41px;
+    bottom: 50px;
+    right: 140px;
+    background: #d04dff;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%) rotate(0);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
